@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'main', url: 'https://github.com/KarimS101/Selenium_Java.git'
+                git branch: 'main', url: 'https://github.com/KarimS101/Selenium_Java.git'
             }
         }
 
