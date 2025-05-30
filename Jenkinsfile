@@ -24,7 +24,7 @@ pipeline {
             steps {
               publishHTML([
               reportDir: 'target',               // directory containing the report file
-              reportFiles: 'cucumber-reports.html',  // exact report file name
+              reportFiles: 'extent.html',  // exact report file name
               reportName: 'Extent Report',
               allowMissing: false,
               alwaysLinkToLastBuild: true,
