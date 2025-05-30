@@ -22,14 +22,14 @@ pipeline {
 
         stage('Publish Extent Report') {
             steps {
-           publishHTML([
-               reportDir: 'extent-report',
-               reportFiles: 'index.html',
-               reportName: 'Extent Report',
-               allowMissing: false,
-               alwaysLinkToLastBuild: true,
-               keepAll: true
-           ])
+              publishHTML([
+              reportDir: 'target',               // directory containing the report file
+              reportFiles: 'cucumber-reports.html',  // exact report file name
+              reportName: 'Extent Report',
+              allowMissing: false,
+              alwaysLinkToLastBuild: true,
+              keepAll: true
+          ])
             }
         }
     }
