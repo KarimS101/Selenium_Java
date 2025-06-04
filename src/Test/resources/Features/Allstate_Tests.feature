@@ -20,12 +20,12 @@ Feature: Test ASC Allstate
     Given The User Navigates to ASC welcome Page
     Then the user tries to continue without entering ZIP
 
-@Smoke_Test
+@Smoke_Test_1
   Scenario: Should show user an error when no product is selected
     Given The User Navigates to ASC welcome Page
     Then the user tries to continue without selecting a product
 
-  @Smoke_Test_1
+  @Smoke_Test
   Scenario: Expect Save upto 25% when you bundle Message appears when Auto & Home are selected'
     Given The User Navigates to ASC welcome Page
     Then the user should see the bundle message
