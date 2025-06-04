@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,                          // Better console output
-        tags = "@Smoke_Test",
+        tags = "@Smoke_Test_1",
         publish = false                             // Set to true if you want to publish reports to cucumber.io
 )
 public class TestRunner {
