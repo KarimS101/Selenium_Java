@@ -15,8 +15,8 @@ public class WelcomePageSteps {
 
     @Given("The User Navigates to ASC welcome Page" )
     public void launchApplication() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = Utils.Drivers.driver();
+        //driver.manage().window().maximize();
         driver.get("https://purchase.allstate.com/onlineshopping/welcome");
         welcomePage = new welcomePage(driver);
     }

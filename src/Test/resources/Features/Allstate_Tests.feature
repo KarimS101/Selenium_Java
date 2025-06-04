@@ -25,7 +25,7 @@ Feature: Test ASC Allstate
     Given The User Navigates to ASC welcome Page
     Then the user tries to continue without selecting a product
 
-  @Smoke_Test
+  @Smoke_Test_1
   Scenario: Expect Save upto 25% when you bundle Message appears when Auto & Home are selected'
     Given The User Navigates to ASC welcome Page
     Then the user should see the bundle message

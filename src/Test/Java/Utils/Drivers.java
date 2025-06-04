@@ -8,10 +8,10 @@ public class Drivers {
 
     private static final ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
-    public static WebDriver initDriver() {
+    public static WebDriver driver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
-        // options.addArguments("--headless"); // uncomment for headless runs
+        options.addArguments("--headless=new"); // uncomment for headless runs
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
 

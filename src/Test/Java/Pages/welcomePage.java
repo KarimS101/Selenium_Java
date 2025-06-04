@@ -25,7 +25,8 @@ public class welcomePage {
     private By logIntoMyAccountLink = By.xpath("//*[contains(text(),'Log in to My Account')]");
     private By saveWhenYouBundle = By.xpath("//div[contains(text(),'Save up to 25% when you bundle*')]");
 
-    public welcomePage(WebDriver driver) {
+    public welcomePage(WebDriver driver ) {
+
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
